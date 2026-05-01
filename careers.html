@@ -1,37 +1,82 @@
-<style>
-  body {
-    background-image: url('truck-background.jpg.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Zariya Transportation</title>
+    <style>
+      body {
+        background-image: url('truck-background.jpg.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
 
-  .careers-container {
-    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white box so text is readable */
-    padding: 40px;
-    border-radius: 12px;
-    max-width: 800px;
-    margin: 60px auto;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
-    line-height: 1.6;
-  }
+      .careers-container {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 12px;
+        max-width: 800px;
+        margin: 60px auto;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+        line-height: 1.6;
+      }
 
-  h1, h2, h3 { color: #333; }
-  .button {
-    background-color: #f39200;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 20px;
-  }
-</style>
+      h1, h2, h3 { color: #333; }
+
+      /* Form Styling */
+      .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: #f39200;
+        box-shadow: 0 0 5px rgba(243, 146, 0, 0.3);
+      }
+
+      .button {
+        background-color: #f39200;
+        color: white;
+        padding: 14px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .button:hover {
+        background-color: #d68100;
+      }
+    </style>
+</head>
+<body>
 
 <div class="careers-container">
     <h1>Join Our Growing Team</h1>
@@ -40,20 +85,45 @@
     <hr>
 
     <h2>Current Opening: Student Transportation Drivers </h2>
-    <p>We are looking for motivated individuals to join our team immediately. If you are self-driven and meet the criteria below, we want to hear from you.</p>
+    <p>We are looking for motivated individuals to join our team immediately.</p>
 
     <h3>📌 Candidate Requirements</h3>
     <ul>
         <li><strong>Experience:</strong> Minimum of 3 years of verifiable industry experience.</li>
-        <li><strong>Background:</strong> Must pass a comprehensive background check (Clean record required).</li>
-        <li><strong>Transportation:</strong> Must possess a reliable personal vehicle for daily use.</li>
-        <li><strong>Professionalism:</strong> Strong communication skills and a "customer-first" mindset.</li>
+        <li><strong>Background:</strong> Must pass a comprehensive background check.</li>
+        <li><strong>Transportation:</strong> Must possess a reliable personal vehicle.</li>
+        <li><strong>Professionalism:</strong> Strong communication and a "customer-first" mindset.</li>
     </ul>
 
-    <h3>💼 Why Work With Us?</h3>
-    <p>We offer competitive pay, a supportive team environment, and the autonomy to manage your workflow effectively.</p>
+    <hr>
 
-    <div class="apply-now">
-        <a href="mailto:wamiqasif@outlook.com" class="button">Apply Now</a>
-    </div>
+    <h3>📩 Apply Now</h3>
+    <form action="https://formspree.io/f/wamiqasif@outlook.com" method="POST">
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="first_name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="last_name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="_replyto" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" required>
+        </div>
+
+        <input type="hidden" name="_subject" value="New Driver Application - Zariya Transportation">
+        
+        <button type="submit" class="button">Submit Application</button>
+    </form>
 </div>
+
+</body>
+</html>
