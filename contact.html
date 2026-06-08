@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Zariya Transportation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html"><img src="zariya logo.jpg" alt="Zariya Transportation Logo" class="h-16"></a>
+            
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-[#f39200] font-semibold">Home</a>
+                <a href="services.html" class="text-gray-600 hover:text-[#f39200] font-semibold">Services</a>
+                <a href="safety.html" class="text-gray-600 hover:text-[#f39200] font-semibold">Safety & Compliance</a>
+                <a href="careers.html" class="text-gray-600 hover:text-[#f39200] font-semibold">Careers</a>
+                <a href="contact.html" class="text-[#f39200] font-semibold border-b-2 border-[#f39200]">Contact</a>
+                <a href="tel:6308689112" class="bg-[#f39200] hover:bg-[#d88100] text-white px-6 py-2 rounded-full font-bold transition">
+                    Book Now
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <a href="tel:6308689112" class="bg-[#f39200] hover:bg-[#d88100] text-white px-4 py-2 rounded-full font-bold text-sm">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-gradient-to-r from-[#0a2e4d] to-[#164e85] text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Contact Us</h1>
+            <p class="text-xl text-blue-100">Get in touch with Zariya Transportation. We're here to answer your questions.</p>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+                <div class="text-5xl mb-4">📞</div>
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Call Us</h3>
+                <p class="text-gray-700 mb-4">Speak directly with our team about scheduling or general inquiries.</p>
+                <a href="tel:6308689112" class="inline-block text-[#f39200] font-bold text-lg hover:underline">
+                    (630) 868-9112
+                </a>
+                <p class="text-gray-600 text-sm mt-4">Available Monday-Friday, 7 AM - 6 PM</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+                <div class="text-5xl mb-4">📧</div>
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Email Us</h3>
+                <p class="text-gray-700 mb-4">Send us a detailed message and we'll respond promptly.</p>
+                <a href="mailto:info@zariyatransportation.com" class="inline-block text-[#f39200] font-bold text-lg hover:underline">
+                    info@zariyatransportation.com
+                </a>
+                <p class="text-gray-600 text-sm mt-4">Response within 24 hours</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+                <div class="text-5xl mb-4">📍</div>
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Service Area</h3>
+                <p class="text-gray-700 mb-4">We proudly serve the Greater Chicagoland area.</p>
+                <p class="font-semibold text-gray-800">
+                    Greater Chicagoland<br>
+                    Illinois
+                </p>
+                <p class="text-gray-600 text-sm mt-4">Expanding coverage available</p>
+            </div>
+        </div>
+
+        <section class="grid md:grid-cols-2 gap-16 mb-16">
+            <div class="bg-white rounded-2xl shadow-lg p-10">
+                <h2 class="text-3xl font-bold text-blue-900 mb-8">Send Us a Message</h2>
+                <form action="https://formspree.io/f/mwvypoyv" method="POST" class="space-y-6">
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first_name" class="block font-semibold text-gray-900 mb-2">First Name *</label>
+                            <input type="text" id="first_name" name="First Name" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#f39200] transition">
+                        </div>
+                        <div>
+                            <label for="last_name" class="block font-semibold text-gray-900 mb-2">Last Name *</label>
+                            <input type="text" id="last_name" name="Last Name" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#f39200] transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block font-semibold text-gray-900 mb-2">Email Address *</label>
+                        <input type="email" id="email" name="Email" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#f39200] transition">
+                    </div>
+
+                    <div>
+                        <label for="phone" class="block font-semibold text-gray-900 mb-2">Phone Number *</label>
+                        <input type="tel" id="phone" name="Phone Number" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#f39200] transition">
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block font-semibold text-gray-900 mb-2">Subject *</label>
+                        <input type="text" id="subject" name="Subject" required placeholder="What is this about?" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#f39200] transition">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block font-semibold text-gray-900 mb-2">Message *</label>
+                        <textarea id="message" name="Message" rows="6" required placeholder="Please tell us how we can help..." class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#f39200] transition" style="font-family: 'Inter', sans-serif;"></textarea>
+                    </div>
+
+                    <input type="hidden" name="_subject" value="New Contact Form Submission - Zariya Transportation">
+                    <input type="hidden" name="_next" value="https://wamiqasif1998.github.io/Zariya-first-site/contact.html">
+
+                    <button type="submit" class="w-full bg-[#f39200] hover:bg-[#d88100] text-white font-bold py-4 rounded-lg text-lg transition transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-blue-900 mb-8">How Can We Help?</h2>
+                
+                <div class="space-y-8">
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-blue-900 mb-3">📅 Schedule Transportation</h3>
+                        <p class="text-gray-700 mb-3">Ready to book safe, reliable rides for your student or school district? Call us directly to discuss your transportation needs and get started.</p>
+                        <a href="tel:6308689112" class="text-[#f39200] font-bold hover:underline">(630) 868-9112</a>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-blue-900 mb-3">🤝 Partner With Us</h3>
+                        <p class="text-gray-700 mb-3">Are you a school district interested in our services? We'd love to discuss partnership opportunities and how we can support your students.</p>
+                        <p class="text-gray-700 font-semibold">Use the contact form to learn more.</p>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-blue-900 mb-3">💼 Join Our Team</h3>
+                        <p class="text-gray-700 mb-3">Interested in a career with Zariya Transportation? We're hiring professional drivers across the Chicagoland area.</p>
+                        <a href="careers.html" class="text-[#f39200] font-bold hover:underline">View Career Opportunities →</a>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-blue-900 mb-3">❓ General Questions</h3>
+                        <p class="text-gray-700 mb-3">Have questions about our services, safety standards, or anything else? We're here to help and happy to provide information.</p>
+                        <p class="text-gray-700 text-sm">Email us or fill out the contact form above.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-[#0a2e4d] to-[#164e85] text-white rounded-xl p-8 mt-8">
+                    <h3 class="text-xl font-bold mb-4">Quick Contact</h3>
+                    <p class="mb-4">For urgent scheduling needs, call us directly:</p>
+                    <a href="tel:6308689112" class="inline-block bg-[#f39200] hover:bg-[#d88100] text-white px-6 py-3 rounded-lg font-bold transition">
+                        Call Now: (630) 868-9112
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-200 rounded-2xl p-12 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Expected Response Times</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Phone Calls</h3>
+                    <p class="text-gray-700 text-lg">Same day or next business day</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Email Messages</h3>
+                    <p class="text-gray-700 text-lg">Within 24 hours</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Urgent Requests</h3>
+                    <p class="text-gray-700 text-lg">Call us for immediate assistance</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 border-t border-gray-800 text-center mt-16">
+        <div class="max-w-7xl mx-auto">
+            <p class="mb-4">© 2026 Zariya Transportation Company. Serving the Greater Chicagoland Area.</p>
+            <p class="text-sm italic">"We move the next generation with the care they deserve."</p>
+        </div>
+    </footer>
+
+</body>
+</html>
